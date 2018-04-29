@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MusicPlayer</string>
+    <string name="browse_songs">Browse by name</string>
+    <string name="browse_artists">Browse by artist</string>
+</resources>
