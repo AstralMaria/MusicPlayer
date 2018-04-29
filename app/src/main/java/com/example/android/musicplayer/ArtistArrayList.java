@@ -5,15 +5,19 @@ import android.widget.ArrayAdapter;
 
 import java.util.ArrayList;
 
-public class SongArrayList {
-    private ArrayAdapter songAdapter;
+public class ArtistArrayList {
+    private ArrayAdapter artistAdapter;
     private ArrayList Music;
     private String mSongName;
     private String mSongArtist;
 
-    public SongArrayList(String SongName, String SongArtist){
-        mSongName=SongName;
+    public ArtistArrayList(String SongArtist, String SongName){
         mSongArtist = SongArtist;
+        mSongName=SongName;
+
+    }
+    public String getSongArtist() {
+        return mSongArtist;
     }
 
     public String getSongName (){
@@ -22,7 +26,5 @@ public class SongArrayList {
 
     }
 
-    public String getSongArtist() {
-        return mSongArtist;
-    }
+
 }

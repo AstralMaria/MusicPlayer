@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
             setContentView(R.layout.activity_main);
             ArrayList<SongAdapter> songs = new ArrayList<>();
             // Find the View that shows the numbers category
-            TextView songOption = findViewById(R.id.songs);
+            TextView songOption = findViewById(R.id.by_name);
 
 // Set a click listener on that View
             songOption.setOnClickListener(new View.OnClickListener() {
@@ -34,15 +34,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         songs = new ArrayList<>();
         // Find the View that shows the numbers category
-        TextView artistOption = findViewById(R.id.artists);
+        TextView artistOption = findViewById(R.id.by_artist);
 
 // Set a click listener on that View
         artistOption.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the numbers View is clicked on.
             @Override
             public void onClick(View view) {
-                Intent songsIntent = new Intent(MainActivity.this, SongsActivity.class);
-                startActivity(songsIntent);
+                Intent artistIntent = new Intent(MainActivity.this, ArtistActivity.class);
+                startActivity(artistIntent);
             }
 
         });
