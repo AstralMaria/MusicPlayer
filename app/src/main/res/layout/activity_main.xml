@@ -13,13 +13,19 @@
     <TextView
         android:id="@+id/by_name"
         style="@style/CategoryStyle"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
         android:background="@color/dark_blue_background"
+        android:textColor="#FFFFFF"
         android:text="@string/browse_songs" />
 
     <TextView
         android:id="@+id/by_artist"
         style="@style/CategoryStyle"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
         android:background="@color/dark_blue_background"
+        android:textColor="#FFFFFF"
         android:text="@string/browse_artists" />
 
 

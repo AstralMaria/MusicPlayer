@@ -41,8 +41,8 @@ public class MainActivity extends AppCompatActivity {
             // The code in this method will be executed when the numbers View is clicked on.
             @Override
             public void onClick(View view) {
-                Intent artistIntent = new Intent(MainActivity.this, ArtistActivity.class);
-                startActivity(artistIntent);
+                Intent songsIntent = new Intent(MainActivity.this, SongsActivity.class);
+                startActivity(songsIntent);
             }
 
         });
