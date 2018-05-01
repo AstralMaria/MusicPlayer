@@ -3,8 +3,11 @@ import android.app.Activity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebSettings;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 
@@ -27,14 +30,20 @@ public class SongAdapter extends ArrayAdapter <SongArrayList> {
         SongArrayList currentSong = getItem(position);
 
         // Find the TextView in the list_item.xml layout with the ID version_name
-        TextView songNameTextView = (TextView) listItemView.findViewById(R.id.by_name);
+        TextView songNameTextView = (TextView) listItemView.findViewById(R.id.song_name);
         // Get the version name from the current AndroidFlavor object and
         // set this text on the name TextView
         songNameTextView.setText(currentSong.getSongName());
+
+        TextView songArtistTextView = (TextView) listItemView.findViewById(R.id.song_artist);
+
+        songArtistTextView.setText(currentSong.getSongArtist());
 
 
         // Return the whole list item layout (containing 2 TextViews and an ImageView)
         // so that it can be shown in the ListView
         return listItemView;
     }
+
+
 }

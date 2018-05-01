@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
             });
 
-        setContentView(R.layout.activity_main);
+
         songs = new ArrayList<>();
         // Find the View that shows the numbers category
         TextView artistOption = findViewById(R.id.by_artist);
@@ -41,8 +41,8 @@ public class MainActivity extends AppCompatActivity {
             // The code in this method will be executed when the numbers View is clicked on.
             @Override
             public void onClick(View view) {
-                Intent songsIntent = new Intent(MainActivity.this, SongsActivity.class);
-                startActivity(songsIntent);
+                Intent artistIntent = new Intent(MainActivity.this, ArtistActivity.class);
+                startActivity(artistIntent);
             }
 
         });

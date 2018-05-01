@@ -1,5 +1,6 @@
 package com.example.android.musicplayer;
 
+import android.content.Context;
 import android.util.Log;
 import android.widget.ArrayAdapter;
 
@@ -13,7 +14,7 @@ public class SongArrayList {
 
     public SongArrayList(String SongName, String SongArtist){
         mSongName=SongName;
-        mSongArtist = SongArtist;
+        mSongArtist=SongArtist;
     }
 
     public String getSongName (){
@@ -21,8 +22,10 @@ public class SongArrayList {
         return mSongName;
 
     }
-
-    public String getSongArtist() {
-        return mSongArtist;
+    public String getSongArtist (){
+        return  mSongArtist;
     }
+
+
+
 }

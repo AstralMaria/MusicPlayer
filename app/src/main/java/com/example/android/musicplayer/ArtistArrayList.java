@@ -1,30 +1,30 @@
 package com.example.android.musicplayer;
-
+import android.content.Context;
 import android.util.Log;
 import android.widget.ArrayAdapter;
 
 import java.util.ArrayList;
 
 public class ArtistArrayList {
-    private ArrayAdapter artistAdapter;
-    private ArrayList Music;
-    private String mSongName;
+
+
     private String mSongArtist;
+    private String mSongName;
 
     public ArtistArrayList(String SongArtist, String SongName){
         mSongArtist = SongArtist;
-        mSongName=SongName;
-
+        mSongName = SongName;
     }
-    public String getSongArtist() {
+
+    public String getSongArtist (){
+
         return mSongArtist;
+
     }
 
-    public String getSongName (){
+    public String getSongName() {
 
         return mSongName;
-
     }
-
 
 }
